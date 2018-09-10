@@ -1,13 +1,18 @@
-    #include<stdio.h>
-    #include<conio.h>
-    void main()
+#include <stdio.h>
+int main()
+{
+    int i, j, rows;
+
+    printf("Enter number of rows: ");
+    scanf("%d",&rows);
+
+    for(i=rows; i>=1; --i)
     {
-    int one, two, multiply;
-    printf("Enter first number - ");
-    scanf("%d",&one);
-    printf("Enter second number - ");
-    scanf("%d",&two);
-    multiply = one * two;
-    printf("The multiplication of numbers %d and %d is %d",one,two,multiply);
-    getch();
+        for(j=1; j<=i; ++j)
+        {
+            printf("* ");
+        }
+        printf("\n");
     }
+    
+    return 0;
